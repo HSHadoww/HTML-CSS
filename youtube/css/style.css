@@ -51,10 +51,14 @@ h4 {
     height: 56px;
     left: 0;
     top: 0;
-    background: lightblue;
+    /* background: lightblue; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#header span:hover {
+    background-color: #C0C0C0;
 }
 
 .menu span {
@@ -69,7 +73,7 @@ h4 {
     display: flex;
     width: 169px;
     height: 56px;
-
+    margin-left: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -115,23 +119,39 @@ img {
     margin-left: 53px;
 }
 
-.search {
+.search span{
     cursor: pointer;
     width: 64px;
     height: 40px;
     display: block;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0 25px 25px 0;
-    padding: 1px 6px 1px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mic {
+
+   
+
+
+.mic span {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 32px;
+}
 
+.mic .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 .user {
@@ -139,9 +159,14 @@ img {
     align-items: center;
 }
 
-.user i {
+.user span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 25px;
-
 }
 
 .userbox {
@@ -151,6 +176,7 @@ img {
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 /* sidebar */
@@ -160,7 +186,7 @@ img {
     left: 0;
     top: 56px;
     width: 224px;
-    background: lightgoldenrodyellow;
+    /* background: lightgoldenrodyellow; */
     padding-top: 10px;
     overflow-y: scroll;
 }
@@ -220,4 +246,53 @@ img {
     width: 24px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.sidebar .lw {
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.sidebar .ft {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #909090;
+}
+
+.sidebar #home {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+/* content */
+.content {
+    width: calc(100vw - 224px);
+    height: calc(100vh- 56px);
+    top: 56px;
+    margin-left: 224px;
+    position: fixed;
+    /* background-color: bisque; */
+}
+
+.chw {
+    overflow: x;
+    display: flex;
+}
+
+.ch {
+    margin: 10px 6px;
+    padding: 6px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.ch:hover {
+    background-color: #C0C0C0;
 }
